@@ -1,0 +1,141 @@
+/* Estilos para la sección principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 140px); /* Altura mínima para ocupar toda la pantalla menos el header y footer */
+    padding: 20px;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Asegurar que las imágenes se ajusten al 100% del contenedor */
+}
+
+.carousel-images img {
+    width: 800px; /* Ancho máximo de las imágenes */
+    height: auto;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.carousel-images img.active {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Estilos para los controles del carrusel */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel-images img {
+        width: 100%; /* Imágenes ocupan el ancho completo en dispositivos móviles */
+    }
+}
+
+    /*Inicio Apartado de información  */
+ .cards {
+ 
+    display: flex;
+    justify-content: center;
+    border: 2px solid #3b3a3a;
+    background-color: #d9d9d9;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    padding: 1.1rem;
+    gap: 1.2rem;
+    justify-content:left;
+    border-radius: 10%;
+
+}
+
+.card:hover {
+    border: 2px solid #1e2b7e;
+    transform: scale(1.01);
+    transition: 0.3s ease;
+}
+
+.card-title {
+    text-align: center;
+    color: #605f5f;
+}
+
+.services-title {
+    text-align: center;
+    position: relative;
+    padding: 2%;
+}
+
+.services-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.card-logo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.card-content a {
+
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: none;
+        background-color:#212121;
+    color:aliceblue;
+}
+
+.card-content a:hover {
+    background-color:#1e2b7e;
+    color:aliceblue;
+    font-weight: 600;
+}
+ /*fin Apartado de información  */
+
+ /* apartado imagen ine */
+ .ine{
+    border: 2px solid #3b3a3a;
+    border-radius: 15%;
+    justify-content: end;
+ }
